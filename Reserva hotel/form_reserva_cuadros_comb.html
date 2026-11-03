@@ -12,9 +12,12 @@
     <legend> Datos del solicitante</legend>
     <label for="nombre">Nombre y Apellidos:</label>
     <input type="text" placeholder="Ingresa tu nombre" id="nombre" value="" maxlength="100" size="12" required>
-    <br> <br>
+    <br> 
+    <label for="dni">DNI (Seleccione un archivo de imagen)</label>
+    <input type="file" name="dni" id="dni">
+    <br>
     <label for="telefono">Teléfono:</label>
-    <input type="text" id="telefono" name="telefono" placeholder="" required maxlength="9" size="9">
+    <input type="text" id="telefono" name="telefono" placeholder="Tu numero" required maxlength="9" size="9" pattern="[0-9]{9}">
 </fieldset>
 <fieldset>
     <legend>Datos de la Reserva</legend>
@@ -33,10 +36,18 @@
         <br>
         <label for="provincia">Provincia</label>
     <select name="provincia" id="provincia">
-        <option value="Galicia">Galicia</option>
-    </select>
-</fieldset>
+        <optgroup label="Galicia">Galicia
 
+            <option value="Vigo">Vigo
+
+            </option>
+        </optgroup>
+    </select>
+
+
+</fieldset>
+<input type="submit" value="Entrar"/> 
+<input type="reset"  value="Limpiar"/>
     </form>
 </body>
 </html>

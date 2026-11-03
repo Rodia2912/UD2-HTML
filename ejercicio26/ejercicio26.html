@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <fieldset>
+<label for="tel">Telefono</label>
+<input type="tel" id="tel" name="tel" required maxlength="9" pattern="[0-9]{9}" placeholder="9 Numeros">
+<br>
+
+<label for="email">Introduce tu email</label>
+
+<input type="email" name="email" id="email" autocomplete="email">
+</fieldset>
+<br>
+<fieldset>
+<label for="range">Introduce el numero de personas</label>
+<input type="range" name="personas" id="personas" min="1" max="20" step="1" value="1">
+</fieldset>
+<fieldset>
+    <label for="search">Buscar</label>
+    <input type="search" name="search" id="search" placeholder="Busqueda aqui...">
+    <label for="Color">color</label>
+    <input type="color">
+</fieldset>
+    
+    
+</body>
+</html>
